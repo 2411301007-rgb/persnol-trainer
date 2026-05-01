@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forge Fitness | Elevate Your Training</title>
+    <meta name="description" content="A modern fitness website helping you learn exercises and plan your workouts.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-dumbbell"></i> FORGE<span>FIT</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#workouts">Workouts</a></li>
+            <li><a href="#exercises">Exercises</a></li>
+            <li><a href="#diet">Diet & BMI</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="mobile-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="glitch-text" data-text="UNLEASH YOUR POTENTIAL">UNLEASH YOUR POTENTIAL</h1>
+            <p>Master your form. Build your strength. Transform your life.</p>
+            <div class="hero-buttons">
+                <a href="#workouts" class="btn btn-primary" id="start-workout-btn">START WORKOUT <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#exercises" class="btn btn-outline">LEARN EXERCISES</a>
+            </div>
+        </div>
+        <div class="quote-bar">
+            <p>"The only bad workout is the one that didn't happen."</p>
+        </div>
+    </header>
+
+    <!-- Workout Plans Section -->
+    <section id="workouts" class="section">
+        <div class="container">
+            <h2 class="section-title">WORKOUT PLANS</h2>
+            <div class="plans-grid">
+                <!-- Beginner Plan -->
+                <div class="plan-card">
+                    <div class="plan-header beginner">
+                        <h3>BEGINNER</h3>
+                        <p>Foundation & Form</p>
+                    </div>
+                    <div class="plan-body">
+                        <ul>
+                            <li><strong>Mon:</strong> Full Body Basic</li>
+                            <li><strong>Tue:</strong> Rest / Active Recovery</li>
+                            <li><strong>Wed:</strong> Upper Body Focus</li>
+                            <li><strong>Thu:</strong> Rest</li>
+                            <li><strong>Fri:</strong> Lower Body Focus</li>
+                            <li><strong>Sat:</strong> Cardio / Core</li>
+                            <li><strong>Sun:</strong> Rest</li>
+                        </ul>
+                        <button class="btn btn-full">Select Plan</button>
+                    </div>
+                </div>
+                <!-- Intermediate Plan -->
+                <div class="plan-card featured">
+                    <div class="plan-badge">Most Popular</div>
+                    <div class="plan-header intermediate">
+                        <h3>INTERMEDIATE</h3>
+                        <p>Hypertrophy & Strength</p>
+                    </div>
+                    <div class="plan-body">
+                        <ul>
+                            <li><strong>Mon:</strong> Push (Chest, Shoulders, Triceps)</li>
+                            <li><strong>Tue:</strong> Pull (Back, Biceps)</li>
+                            <li><strong>Wed:</strong> Legs & Core</li>
+                            <li><strong>Thu:</strong> Rest</li>
+                            <li><strong>Fri:</strong> Push (Focus on Strength)</li>
+                            <li><strong>Sat:</strong> Pull (Focus on Strength)</li>
+                            <li><strong>Sun:</strong> Rest</li>
+                        </ul>
+                        <button class="btn btn-full primary">Select Plan</button>
+                    </div>
+                </div>
+                <!-- Advanced Plan -->
+                <div class="plan-card">
+                    <div class="plan-header advanced">
+                        <h3>ADVANCED</h3>
+                        <p>Peak Performance</p>
+                    </div>
+                    <div class="plan-body">
+                        <ul>
+                            <li><strong>Mon:</strong> Heavy Lower Body</li>
+                            <li><strong>Tue:</strong> Heavy Upper Body</li>
+                            <li><strong>Wed:</strong> Active Recovery / Core</li>
+                            <li><strong>Thu:</strong> Hypertrophy Legs</li>
+                            <li><strong>Fri:</strong> Hypertrophy Push</li>
+                            <li><strong>Sat:</strong> Hypertrophy Pull</li>
+                            <li><strong>Sun:</strong> Rest</li>
+                        </ul>
+                        <button class="btn btn-full">Select Plan</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exercise Guide Section -->
+    <section id="exercises" class="section bg-darker">
+        <div class="container">
+            <h2 class="section-title">EXERCISE GUIDE</h2>
+            
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="chest">Chest</button>
+                <button class="filter-btn" data-filter="back">Back</button>
+                <button class="filter-btn" data-filter="legs">Legs</button>
+                <button class="filter-btn" data-filter="arms">Arms</button>
+                <button class="filter-btn" data-filter="shoulders">Shoulders</button>
+                <button class="filter-btn" data-filter="abs">Abs</button>
+            </div>
+
+            <div class="exercises-grid" id="exercises-container">
+                <!-- Exercises will be populated via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Diet Tips & BMI Section -->
+    <section id="diet" class="section">
+        <div class="container">
+            <div class="split-layout">
+                <div class="diet-content">
+                    <h2 class="section-title text-left">NUTRITION & DIET</h2>
+                    <p class="section-subtitle">Fuel your body for optimal performance and recovery.</p>
+                    
+                    <div class="diet-tips">
+                        <div class="tip-card">
+                            <i class="fa-solid fa-droplet"></i>
+                            <h4>Hydration is Key</h4>
+                            <p>Drink at least 3-4 liters of water daily, especially around workout times.</p>
+                        </div>
+                        <div class="tip-card">
+                            <i class="fa-solid fa-drumstick-bite"></i>
+                            <h4>Protein Intake</h4>
+                            <p>Aim for 1.6-2.2g of protein per kg of body weight to build and repair muscle.</p>
+                        </div>
+                        <div class="tip-card">
+                            <i class="fa-solid fa-bowl-rice"></i>
+                            <h4>Carb Timing</h4>
+                            <p>Consume complex carbs 2 hours before training and simple carbs post-workout.</p>
+                        </div>
+                    </div>
+
+                    <div class="sample-diet">
+                        <h3>Sample Muscle-Building Diet</h3>
+                        <ul class="diet-list">
+                            <li><strong>Breakfast:</strong> Oatmeal with whey protein, berries, and peanut butter.</li>
+                            <li><strong>Lunch:</strong> Grilled chicken breast, sweet potato, and broccoli.</li>
+                            <li><strong>Pre-Workout:</strong> Banana and black coffee.</li>
+                            <li><strong>Post-Workout:</strong> Protein shake and a rice cake.</li>
+                            <li><strong>Dinner:</strong> Salmon, quinoa, and asparagus.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bmi-calculator">
+                    <div class="calculator-card">
+                        <h3>BMI CALCULATOR</h3>
+                        <p>Check your Body Mass Index</p>
+                        <form id="bmi-form">
+                            <div class="form-group">
+                                <label for="weight">Weight (kg)</label>
+                                <input type="number" id="weight" placeholder="e.g. 75" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="height">Height (cm)</label>
+                                <input type="number" id="height" placeholder="e.g. 180" required>
+                            </div>
+                            <button type="submit" class="btn btn-full btn-red">CALCULATE</button>
+                        </form>
+                        <div id="bmi-result" class="hidden">
+                            <h4 id="bmi-value">23.1</h4>
+                            <p id="bmi-status">Normal Weight</p>
+                            <div class="bmi-scale">
+                                <span class="underweight" title="Underweight"></span>
+                                <span class="normal" title="Normal"></span>
+                                <span class="overweight" title="Overweight"></span>
+                                <span class="obese" title="Obese"></span>
+                                <div id="bmi-indicator" class="indicator"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section bg-darker">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title text-left">ABOUT US</h2>
+                    <p>Forge Fitness was born out of a passion for lifting and the pursuit of physical excellence. We believe that everyone deserves the right knowledge to build their best self.</p>
+                    <p>Our mission is to provide clear, actionable exercise guides, structured workout plans, and practical nutrition advice without the fluff. Whether you are picking up a dumbbell for the first time or you are a seasoned lifter, we have the resources to elevate your training.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Exercise Guides</p>
+                        </div>
+                        <div class="stat">
+                            <h3>3</h3>
+                            <p>Specialized Plans</p>
+                        </div>
+                        <div class="stat">
+                            <h3>100%</h3>
+                            <p>Free Content</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fa-solid fa-dumbbell huge-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">GET IN TOUCH</h2>
+            <div class="contact-wrapper">
+                <form id="contact-form" class="contact-form">
+                    <div class="input-row">
+                        <div class="input-group">
+                            <input type="text" id="name" required placeholder=" ">
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" id="email" required placeholder=" ">
+                            <label for="email">Your Email</label>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="subject" required placeholder=" ">
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="input-group">
+                        <textarea id="message" rows="5" required placeholder=" "></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary submit-btn">
+                        <span>SEND MESSAGE</span>
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                    <div id="form-message" class="form-message hidden">Message sent successfully!</div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i class="fa-solid fa-dumbbell"></i> FORGE<span>FIT</span>
+                    </div>
+                    <p>Elevating fitness through precision, form, and dedication.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Forge Fitness. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
